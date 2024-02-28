@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>instruments</title>
+</head>
+<body>
+
+    <header>
+        <h1>Creacio d'Instruments</h1>
+    </header>
+
+    <section class="creaciones">
+
+        <form id="instrumentForm">
+            <label for="nombre">Nom del Instrument:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>  
+            <label for="tipus">Tipo de instrumento</label>  
+            <select id="categoria" name="categoria" required>
+                <option value="tambor">Tambor</option>
+                <option value="flauta">Flauta</option>
+                <option value="guitarra">Guitarra</option>
+            </select>
+            <br>
+            <label for="sonido">So que produeix:</label>
+            <input type="text" id="sonido" name="sonido" required>
+            <br>
+            <label for="categoria">Foto:</label>
+            <input type="file" id="foto" name="foto" accept="image/*">
+            <br>
+            <div class="buttons">
+                <button class="crearinstruments" type="button" onclick="crearInstrumento()">Crear Instrument</button>
+                <button class="llistainstruments" type="button" onclick="mostrarInstrumentos()">Mostrar Lista de Instrumentos</button>
+            </div>
+        </form>
+
+        <div class="mostrar">
+            <div class="img"></div>
+            <div class="text">
+                <div class="nom">
+
+                </div>
+                <div class="so">
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+<script src="./script.js"></script>
+</html>
